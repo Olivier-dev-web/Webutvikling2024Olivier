@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Registreringsskjema</title>
 </head>
 <body>
     <header id="topp">
-        <a href="index.html"><h1>Dokument tittel fra index</h1></a>
+        <a href="registreringsskjema.html"><h1>Registreringsskjema</h1></a>
         <details><summary><h2>Meny</h2></summary>
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Hjem</a>
+                    <a href="registreringsskjema.html">Hjem</a>
                 </li>
                 <li>
                     <a href=""></a>
@@ -32,18 +32,39 @@
 
     <main>
         <section>
-            <article>
-                <h2>Overskrift</h2>
-                <p>Paragraf - tekst til overskriften</p>
-            </article>
-            <article>
-                <h2>Kontakt oss</h2>
-                <p>På <a href="Kontakt.html">denne linken</a> får du tak i oss.</p>
-            </article>
-            <article>
-                <h2>Overskrift</h2>
-                <p>Paragraf - tekst til overskriften</p>
-            </article>
+            <h2>Fyll skjemaet under for å registrere deg.</h2>
+            <form action="post">
+                <label for="navn">Navn*</label>
+                <input type="text" name="navn" id="navn" placeholder="Ola Nordmann" maxlength="45" required>
+                <label for="email">Epost:</label>
+                <input type="email" name="email" id="email" placeholder="eksempel@domene.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <label for="passord">Passord:</label>
+                <input type="password" name="passord" id="passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <label for="fodselsdato">Fødselsdato:</label>
+                <input type="date" name="fodselsdato" id="fodselsdato" max="2023-12-31" required>
+                <label for="telefonnummer">Telefonnummer:</label>
+                <input type="tel" name="number" id="telefonnummer" pattern="[0-9]{8,12}" required>
+                <label for="kjonn">Kjønn:</label>
+                <select name="kjonn" id="kjonn">
+                    <option value="choose">velg</option>
+                    <option value="Male">Mann</option>
+                    <option value="Female">Kvinne</option>
+                </select>
+                <label for="land">Land:</label>
+                <select name="land" id="land">
+                    <option value="choose">Velg land</option>
+                    <option value="norge">Norge</option>
+                    <option value="sverige">Sverige</option>
+                    <option value="danmark">Danmark</option>
+                    <option value="finnland">Finnland</option>
+                    <option value="island">Island</option>
+                </select>
+                <label for="personvern">Personvern:</label>
+                <p>Jeg godtar at.....</p>
+                <input type="checkbox" name="Personvern" id="personvern" required>
+                <input type="submit">
+
+            </form>
         </section>
     </main>
     <aside>
