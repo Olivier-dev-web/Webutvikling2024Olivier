@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Zalando light | Forside</title>
+    <title>Sko | Herre</title>
 </head>
 <body>
-    <header>
+<div id="grid-container">
+    <header id="global-header">
         <img id="main-logo" src="img/logo.png" alt="nettsted logo">
         <nav class="flex-space-b">
             <ul class="flex-menu">
@@ -28,29 +29,30 @@
             </form>
         </nav>
     </header>
+    <aside id="category-menu">
+        <nav>
+            <ul>
+                <li>
+                    Sko
+                    <ul>
+                        <li>Sneakers</li>
+                        <li>Åpne sko</li>
+                        <li>Snøresko</li>
+                        <li>Lave sko</li>
+                        <li>Pensko</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
     <main>
         <nav>
             <ul>
                 <li><a href="#">Herre ></a></li>
+                <li>Sko</a></li>
             </ul>
         </nav>
         <h1>Sko til herre</h1>
-        <aside>
-            <nav>
-                <ul>
-                    <li>
-                        Sko
-                        <ul>
-                            <li>Sneakers</li>
-                            <li>Åpne sko</li>
-                            <li>Snøresko</li>
-                            <li>Lave sko</li>
-                            <li>Pensko</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
         <section>
             <H2>Produkter</H2>
             <form>
@@ -66,64 +68,64 @@
                     <option value="high">Høyeste pris</option>
                 </select>
             </form>
-            <section>
-                <article>
+            <section class="flex-space-b">
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
                     <a href="#"><h3>GAZELLE</h3></a>
                     <p>1 245,00 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/produktbilde.png" alt="adidas Originals
                     GAZELLE - Joggesko">
                     <a href="">Adidas Originals</a>
@@ -134,5 +136,6 @@
         </section>
     </main>
     <footer>Zalando light 2024</footer>
+</div>
 </body>
 </html>
