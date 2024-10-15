@@ -1,0 +1,132 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0ece9;
+}
+
+
+#natur, #science, #animal, #tech, #culture, #history, #geo, #food{
+    padding:3rem;
+    border-radius: 10px;
+}
+
+#natur{
+        background-color: hsl(146, 52%, 72%);
+        grid-column: 1/3;
+        grid-row: 2/4;
+        min-height: 0;
+
+    }
+    
+    #science{
+        background-color:hsl(0, 0%, 100%);
+        grid-column: 3/4;
+        grid-row: 2/3;
+
+    }
+    #animal{
+        background-color: hsl(337, 52%, 72%);
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    #tech{
+        background-color: hsl(204, 52%, 72%);
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+    #culture{
+        background-color: hsl(271, 52%, 72%);
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+    }
+    #history{
+        background-color: hsl(8, 52%, 72%);
+        grid-column: 2/3;
+        grid-row: 4/5;
+ 
+    }
+    #geo{
+        background-color: hsl(168, 52%, 72%);
+        grid-column: 3/4;
+        grid-row: 4/5;
+
+    }
+    #food{
+        background-color: hsl(30, 52%, 72%);
+        grid-column: 4/5;
+        grid-row: 4/5;
+
+    }
+
+    #grid-container{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: auto auto auto;
+
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1/2; /*Det er det samme som grid-row-start/grid-row-end */
+
+}
+
+.flex-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-in-center{
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#mansory-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 200px 200px 200px;
+    gap: 1rem;
+}
+
+#tema{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+main section{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+h3{
+    display: flex;
+    align-items: last baseline;
+}
+
+footer{
+    grid-column: 1/4;
+    grid-row: 4/4;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

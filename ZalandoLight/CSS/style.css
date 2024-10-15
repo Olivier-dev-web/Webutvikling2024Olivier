@@ -35,10 +35,21 @@ p, a{font-size: 1rem;}
 #banner{
   display: flex;
   flex-wrap: wrap;
+  background-color: #d9d9d9;
+  justify-content: space-between;
   
   img{
-    70%
+    max-width: 70%;
   }
+}
+
+#banner div h2{
+  font-size: 1rem;
+}
+
+#banner div{
+  width: 30%;
+  padding: 2rem;
 }
 
 main{
